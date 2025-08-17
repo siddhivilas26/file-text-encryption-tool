@@ -57,6 +57,13 @@ http://localhost:8080
 
 ---
 
+🤝 Contribution
+
+Feel free to fork this project and add more features (like saving tasks, marking completed, etc.).
+Pull requests are welcome!
+
+---
+
 👩‍💻 Author
 
 Created by Siddhi Vilas Bahutule 🚀
