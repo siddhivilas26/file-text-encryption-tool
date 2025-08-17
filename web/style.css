@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* 🔘 Dark Mode Button */
+#toggleTheme {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+#toggleTheme:hover {
+    transform: scale(1.2);
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 70px auto 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.button-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 15px 0;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+#result {
+    background: #eee;
+    padding: 10px;
+    border-radius: 6px;
+    min-height: 50px;
+}
+
+.info {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+/* 🌙 Dark Mode */
+.dark-mode {
+    background: #181818;
+    color: #ddd;
+}
+
+.dark-mode .container {
+    background: #222;
+    color: #eee;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background: #333;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+.dark-mode button {
+    background: #555;
+}

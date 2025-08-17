@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Encryption Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Dark Mode Button on Top Right -->
+    <button id="toggleTheme">🌙</button>
+
+    <div class="container">
+        <h1>🔐 File Encryption Tool</h1>
+        <p class="subtitle">Secure your files or plain text using a password</p>
+
+        <!-- Password Input -->
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password" placeholder="Enter strong password">
+        <div id="strengthMsg"></div>
+
+        <!-- Textbox Explanation -->
+        <div class="text-section">
+            <h2>Encrypt / Decrypt Text</h2>
+            <p class="info">💡 Use this box if you want to type or paste text directly instead of uploading a file.</p>
+            <textarea id="textInput" placeholder="Type or paste your secret message here..."></textarea>
+        </div>
+
+        <!-- File Handling -->
+        <div class="file-section">
+            <h2>Encrypt / Decrypt File</h2>
+            <p class="info">💡 Enter the file name (only <b>.txt</b> supported for now).</p>
+            <input type="text" id="filename" placeholder="Enter filename e.g. secret.txt">
+        </div>
+
+        <!-- Buttons -->
+        <div class="button-group">
+            <button onclick="encryptText()">Encrypt Text</button>
+            <button onclick="decryptText()">Decrypt Text</button>
+            <button onclick="encryptFile()">Encrypt File</button>
+            <button onclick="decryptFile()">Decrypt File</button>
+        </div>
+
+        <!-- Output -->
+        <h2>Result:</h2>
+        <pre id="result"></pre>
+
+        <!-- History Section -->
+        <h2>History</h2>
+        <ul id="history"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
