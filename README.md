@@ -55,6 +55,10 @@ java FileEncryptionTool
 Open your browser and visit:
 http://localhost:8080
 
+---
 
+👩‍💻 Author
+
+Created by Siddhi Vilas Bahutule 🚀
 
 
